@@ -1,0 +1,42 @@
+/* filepath: /c:/Users/oliva/OneDrive/Escritorio/utcv/5cuatri/DesarrolloMovilMultiplataforma/empty2/src/app/components/post/post.component.scss */
+.feed-card {
+  background: var(--ion-color-lightGray);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(var(--ion-color-darkGray-rgb), 0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--ion-color-lightGray-shade);
+}
+
+.post-header ion-avatar {
+  margin-right: 10px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.icon-container ion-icon {
+  font-size: 24px;
+  color: var(--ion-color-darkGray);
+  cursor: pointer;
+}
+
+ion-card-content p {
+  padding: 0 10px;
+  margin: 0;
+  color: var(--ion-color-darkGray);
+}

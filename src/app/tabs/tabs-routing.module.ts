@@ -11,15 +11,18 @@ const routes: Routes = [
         path: 'feed',
         loadChildren: () => import('../feed/feed.module').then(m => m.FeedPageModule)
       },
-      //rutas de las paginas
-      // {
-      //   path: 'tab2',
-      //   loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-      // },
-      // {
-      //   path: 'tab3',
-      //   loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
-      // },
+      {
+        path: 'discover',
+        loadChildren: () => import('../discover/discover.module').then(m => m.DiscoverPageModule)
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
+      },
+      {
+        path: 'messages',
+        loadChildren: () => import('../messages/messages.module').then(m => m.MessagesPageModule)
+      },
       {
         path: '',
         redirectTo: '/feed',

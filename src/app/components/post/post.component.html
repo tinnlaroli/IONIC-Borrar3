@@ -1,0 +1,22 @@
+<ion-card *ngFor="let card of cardsFeed" class="feed-card">
+  <ion-card-header class="post-header">
+    <ion-avatar slot="start">
+      <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" />
+    </ion-avatar>
+    <ion-card-title>{{ card.title }}</ion-card-title>
+  </ion-card-header>
+  <img [alt]="card.title" 
+  [src]="card.imgSrc" 
+  class="post-image" 
+  (click)="toggleLike(card)"/>
+
+  <ion-card-content>
+    <div class="icon-container">
+      <ion-icon [name]="card.liked ? 'heart' : 'heart-outline'" (click)="toggleLike(card)"></ion-icon>
+      <ion-icon name="chatbubble-outline"></ion-icon>
+      <ion-icon name="paper-plane-outline"></ion-icon>
+      <ion-icon name="bookmark-outline" slot="end"></ion-icon>
+    </div>
+    <p>{{ card.content }}</p>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,16 @@
+.stories-row {
+  padding: 10px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.stories-row ion-col {
+  display: inline-block;
+  width: auto;
+}
+
+.stories-row ion-avatar {
+  border: 2px solid var(--ion-color-teal);
+  padding: 2px;
+  border-radius: 50%;
+}

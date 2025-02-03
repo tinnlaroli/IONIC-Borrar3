@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout/layout.component';
+import { IonicModule } from '@ionic/angular';
+import { PostComponent } from './post/post.component';
 
 
 
 @NgModule({
   declarations: [
-    LayoutComponent
+    LayoutComponent,
+    PostComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [
-    LayoutComponent
+    LayoutComponent,
+    PostComponent
   ]
 })
 export class ComponentsModule { }
