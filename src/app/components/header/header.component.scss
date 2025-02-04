@@ -1,0 +1,26 @@
+ion-header {
+  --background: var(--ion-color-lightGray);
+  --color: var(--ion-color-darkGray);
+  box-shadow: 0 2px 4px rgba(var(--ion-color-darkGray-rgb), 0.1);
+}
+
+ion-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header-logo {
+  height: 30px;
+  margin: 0 auto;
+}
+
+ion-buttons ion-button {
+  --color: var(--ion-color-darkGray);
+  font-size: 24px;
+}
+
+ion-buttons ion-button ion-icon {
+  font-size: 24px;
+}
